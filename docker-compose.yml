@@ -4,6 +4,6 @@ services:
   web:
     image: vigneshbarathi/cloudengineassignment:latest
     ports:
-      - "9090:3000"
+      - "8080:3000"
     environment:
       - FLASK_ENV=development
