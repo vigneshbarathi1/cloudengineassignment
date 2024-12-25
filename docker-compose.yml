@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  web:
+    image: vigneshbarathi/cloudengineassignment:latest
+    ports:
+      - "9090:3000"
+    environment:
+      - FLASK_ENV=development
