@@ -1,3 +1,12 @@
-# Simple Python program to print a message
-print("Hello cloud-engine labs!!")
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return "Hello cloud-engine labs!!"
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=3000)
+
 
